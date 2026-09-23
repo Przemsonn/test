@@ -68,7 +68,7 @@ CREATE TABLE task_comments (
 -- ----------------------------------------------------------------
 INSERT INTO participants (participant_id, initials, display_name)
 VALUES
-    (1, 'PRKD', 'Workshop Participant 1'),
+    (0, 'PRKD', 'Workshop Participant 1'),
     (2, 'PAAT', 'Workshop Participant 2'),
     (3, 'ALZK', 'Workshop Participant 3'),
     (4, 'WERA', 'Workshop Participant 4'),
