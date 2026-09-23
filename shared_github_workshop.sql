@@ -38,7 +38,7 @@ CREATE TABLE tasks (
     project_id          INTEGER NOT NULL REFERENCES projects(project_id),
     participant_id      INTEGER NOT NULL REFERENCES participants(participant_id),
     task_name           VARCHAR(200) NOT NULL,
-    category            VARCHAR(50) NOT NULL,
+    category            VARCHAR(500) NOT NULL,
     priority            VARCHAR(10) NOT NULL,
     status              VARCHAR(20) NOT NULL,
     start_date          DATE NOT NULL,
