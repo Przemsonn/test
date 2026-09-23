@@ -8,5 +8,4 @@ def greet(name: str) -> str:
     return f"Cześć, {name}"
 
 print(greet("PRKD"))
-helo
 ```
