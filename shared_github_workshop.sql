@@ -20,7 +20,7 @@ DROP TABLE IF EXISTS participants;
 -- ----------------------------------------------------------------
 CREATE TABLE participants (
     participant_id      INTEGER PRIMARY KEY,
-    initials            VARCHAR(1000) NOT NULL UNIQUE,
+    initials            VARCHAR(10000) NOT NULL UNIQUE,
     display_name        VARCHAR(10000) NOT NULL,
     created_at          TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
@@ -44,8 +44,8 @@ CREATE TABLE tasks (
     start_date          DATE NOT NULL,
     due_date            DATE NOT NULL,
     completed_date      DATE,
-    estimated_hours     NUMERIC(8, 2) NOT NULL,
-    actual_hours        NUMERIC(8, 2),
+    estimated_hours     NUMERIC(8, 20) NOT NULL,
+    actual_hours        NUMERIC(8, 20),
     completion_pct      NUMERIC(5, 2) NOT NULL DEFAULT 0,
     notes               VARCHAR(500),
     CONSTRAINT chk_task_dates CHECK (due_date >= start_date),
