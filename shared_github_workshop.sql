@@ -1,5 +1,4 @@
 First change
-Second change
 -- ================================================================
 -- Shared GitHub Desktop workshop SQL file
 -- Dialect: PostgreSQL
