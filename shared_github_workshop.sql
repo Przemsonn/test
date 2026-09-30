@@ -1,3 +1,4 @@
+corrected changes
 -- ================================================================
 -- Shared GitHub Desktop workshop SQL file
 -- Dialect: PostgreSQL
