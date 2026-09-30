@@ -22,7 +22,7 @@ CREATE TABLE participants (
     participant_id      INTEGER PRIMARY KEY,
     initials            VARCHAR(10) NOT NULL UNIQUE,
     initials            VARCHAR(100) NOT NULL UNIQUE,
-    display_name        VARCHAR(10000) NOT NULL,
+    display_name        VARCHAR(100) NOT NULL,
     created_at          TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
